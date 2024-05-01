@@ -1,0 +1,12 @@
+quarkus:
+  datasource:
+    db-kind: postgresql
+    username: postgres
+    password: "1"
+    jdbc:
+      url: jdbc:postgresql://localhost:5432/social?autoReconnect=true&useSSL=false
+  hibernate-orm:
+    database:
+      generation: drop-and-create
+  http:
+    port: 8081
